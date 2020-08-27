@@ -209,10 +209,11 @@ img {
     padding-right: 140px;
     text-align: center;
     transform: translateY(-150%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .container-nav-list.is-open {
     transform: translateY(0);
+    background-color: #ffffff;
   }
   .navigation {
     margin-bottom: 60px;
