@@ -33,7 +33,7 @@
   height: 70px;
 }
 @media screen and (min-width: 480px) {
-  .cappability-list {
+  .capabillity-list {
     max-width: 100%;
     &-item {
       max-width: 450px;
@@ -47,11 +47,28 @@
   }
 }
 @media screen and (min-width: 768px) {
-  .cappability-list {
+  .capabillity-list {
     display: flex;
     flex-wrap: wrap;
     &-item {
-      width: calc((100% - 30px) / 2);
+      max-width: calc((100% - 30px) / 2);
+      &:nth-child(odd) {
+        margin-right: 30px;
+      }
+    }
+  }
+  .capabillity-header {
+    text-align: start;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .capabillity-list {
+    flex-wrap: nowrap;
+    &-item {
+      max-width: calc((100% - (30 * 2)) / 4);
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
     }
   }
 }

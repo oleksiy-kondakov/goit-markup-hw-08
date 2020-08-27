@@ -526,6 +526,7 @@ img {
 }
 
 .hero {
+  margin: 0 auto;
   background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../../images/hero-mobile.jpg");
   background-size: cover;
 }
@@ -678,13 +679,13 @@ img {
 }
 
 @media screen and (min-width: 480px) {
-  .cappability-list {
+  .capabillity-list {
     max-width: 100%;
   }
-  .cappability-list-item {
+  .capabillity-list-item {
     max-width: 450px;
   }
-  .cappability-list-item:not(:last-child) {
+  .capabillity-list-item:not(:last-child) {
     margin-bottom: 30px;
   }
   .capabillity-header {
@@ -693,12 +694,30 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .cappability-list {
+  .capabillity-list {
     display: flex;
     flex-wrap: wrap;
   }
-  .cappability-list-item {
-    width: calc((100% - 30px) / 2);
+  .capabillity-list-item {
+    max-width: calc((100% - 30px) / 2);
+  }
+  .capabillity-list-item:nth-child(odd) {
+    margin-right: 30px;
+  }
+  .capabillity-header {
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .capabillity-list {
+    flex-wrap: nowrap;
+  }
+  .capabillity-list-item {
+    max-width: calc((100% - (30 * 2)) / 4);
+  }
+  .capabillity-list-item:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
