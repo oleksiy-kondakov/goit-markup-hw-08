@@ -1,12 +1,12 @@
 .container {
   display: flex;
   align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 @media screen and(max-width:767px) {
   .container {
     justify-content: space-between;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 }
 @media screen and (min-width: 480px) {
@@ -24,6 +24,7 @@
 }
 @media screen and (min-width: 1200px) {
   .container {
+    // justify-content: space-between;
     width: 1200px;
     height: auto;
     margin-left: auto;

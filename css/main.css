@@ -49,13 +49,13 @@ img {
 .container {
   display: flex;
   align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 @media screen and (max-width: 767px) {
   .container {
     justify-content: space-between;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 }
 
@@ -447,7 +447,7 @@ img {
   .nav-list-item:not(:last-child) {
     margin-bottom: 40px;
   }
-  .nav-list .contacts-list-item:not(:last-child) {
+  .contacts-list-item:not(:last-child) {
     margin-bottom: 16px;
   }
 }
@@ -489,6 +489,43 @@ img {
     font-size: 12px;
     line-height: 1.166;
     letter-spacing: 0.02em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-list {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 20px;
+  }
+  .contacts-list-item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .nav-list {
+    height: auto;
+  }
+  .nav-list-item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .logo-white {
+    margin-right: 93px;
+  }
+  .navigation {
+    margin-right: 305px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .main-header {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.615;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding-top: 118px;
+    margin-bottom: 30px;
   }
 }
 
@@ -536,19 +573,6 @@ img {
 .hero-button:hover, .hero-button:focus {
   background-color: #f5f4fa;
   color: #2196f3;
-}
-
-.main-header {
-  font-style: normal;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #ffffff;
-  padding-top: 200px;
-  margin-bottom: 30px;
 }
 
 .capabillity-header {
