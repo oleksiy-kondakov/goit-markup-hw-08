@@ -484,8 +484,7 @@ img {
   max-width: 206px;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 16px;
-  margin-bottom: 24px;
+  padding-bottom: 24px;
 }
 
 .social-media-link-list-item {

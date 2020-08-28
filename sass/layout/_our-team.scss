@@ -2,21 +2,73 @@
   background-color: #f5f4fa;
 }
 .our-team-list {
-  display: flex;
   justify-content: center;
   &-item {
     background-color: white;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 1px 3px rgba(0, 0, 0, 0.12);
-    width: 270px;
     height: auto;
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
   }
   &-img {
     margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .section-dark h2 {
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $primary-text-color;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .our-team-list-item {
+    max-width: 450px;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .our-team-list {
+    display: flex;
+    flex-wrap: wrap;
+    &-item {
+      max-width: calc((100% - 30px) / 2);
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .our-team-list-item {
+    &:nth-child(odd) {
+      margin-right: 30px;
+    }
+    &:nth-child(-n + 2) {
+      margin-bottom: 30px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .our-team-list {
+    flex-wrap: nowrap;
+    &-item {
+      max-width: calc((100% - 30px * 3) / 4);
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+  }
+  .section-dark h2 {
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
   }
 }
 
@@ -45,5 +97,3 @@
   margin-top: 0;
   margin-bottom: 16px;
 }
-
-@import "../components/social-media-list";

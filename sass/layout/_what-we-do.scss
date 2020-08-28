@@ -1,12 +1,12 @@
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   .section.what-we-do {
     display: none;
   }
 }
 @media screen and (min-width: 1200px) {
-  .section.what-we-do {
-    display: block;
-  }
+  // .section.what-we-do {
+  //   display: block;
+  // }
   .what-we-do .container {
     display: block;
   }
