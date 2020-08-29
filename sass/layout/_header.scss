@@ -91,6 +91,9 @@
   .header {
     padding-top: 10px;
     padding-bottom: 10px;
+    .container {
+      display: flex;
+    }
   }
   .header-menu-button {
     background-color: transparent;
@@ -163,6 +166,9 @@
   }
 }
 @media screen and(min-width:768px) {
+  .header .container {
+    flex-wrap: nowrap;
+  }
   .header-menu-button {
     display: none;
   }

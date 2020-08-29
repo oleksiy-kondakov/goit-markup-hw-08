@@ -445,6 +445,9 @@ img {
     padding-top: 10px;
     padding-bottom: 10px;
   }
+  .header .container {
+    display: flex;
+  }
   .header-menu-button {
     background-color: transparent;
     border: none;
@@ -501,6 +504,9 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .header .container {
+    flex-wrap: nowrap;
+  }
   .header-menu-button {
     display: none;
   }
@@ -999,16 +1005,9 @@ img {
 }
 
 .footer .container {
-  display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
   align-items: baseline;
-}
-
-.footer-social-link-container {
-  width: 206px;
-  text-align: start;
-  margin-right: 93px;
 }
 
 .footer-contacts-list-item:not(:last-child) {
@@ -1019,11 +1018,9 @@ img {
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: #ffffff;
-  margin-bottom: 20px;
 }
 
 .adress-text {
@@ -1031,24 +1028,16 @@ img {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffffff;
-  margin-bottom: 9px;
-}
-
-.adress-container {
-  margin-right: 69px;
-  width: 231px;
 }
 
 .contacts-list-footer-item-link {
   font-family: Roboto;
   font-weight: 500;
   font-style: normal;
-  line-height: 1.14;
-  font-size: 14px;
+  line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
   letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1058,42 +1047,94 @@ img {
   color: #2196f3;
 }
 
-.social-media-link-list {
-  display: flex;
-  justify-content: space-between;
-  max-width: 206px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-bottom: 24px;
-}
-
-.social-media-link-list-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.social-media-link-list-item:not(:last-child) {
+.social-links-footer-item {
   margin-right: 10px;
 }
 
-.social-media-link-list-item:hover, .social-media-link-list-item:focus {
-  background-color: #2196f3;
+@media screen and (max-width: 767px) {
+  .container {
+    display: block;
+    text-align: center;
+  }
+  .logo-black {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .adress-text {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  .contacts-list-footer-item-link {
+    font-size: 14px;
+  }
+  .adress-container {
+    margin-bottom: 60px;
+  }
+  .footer-social-link-container {
+    margin-bottom: 60px;
+  }
+  .submit-form {
+    display: block;
+  }
+  .footer-submit-input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 
-.social-media-link-list-item:hover .social-media-link-item-svg, .social-media-link-list-item:focus .social-media-link-item-svg {
-  fill: #ffffff;
+@media screen and (min-width: 768px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .logo-black {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .adress-container {
+    margin-bottom: 60px;
+    margin-right: 165px;
+  }
+  .adress-text {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  .social-links-footer {
+    text-align: center;
+  }
+  .footer-submit-input {
+    width: 450px;
+    margin-bottom: 20px;
+  }
+  .submit-text {
+    text-align: center;
+  }
 }
 
-.social-media-link-item-svg {
-  width: 20px;
-  height: 20px;
-  fill: #afb1b8;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (min-width: 1200px) {
+  .container {
+    flex-wrap: nowrap;
+  }
+  .adress-container {
+    margin-bottom: 0;
+    margin-right: 70px;
+  }
+  .submit-text {
+    text-align: start;
+  }
+  .submit-form {
+    display: flex;
+  }
+  .footer-submit-input {
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
+  .footer-social-link-container {
+    margin-right: 93px;
+  }
 }
 
 .social-links-footer {
@@ -1122,7 +1163,6 @@ img {
 
 /*ФОРМА*/
 .submit-form {
-  display: flex;
   max-width: 100%;
 }
 
@@ -1142,14 +1182,12 @@ img {
 }
 
 .footer-submit-input {
-  width: 358px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: transparent;
   padding-left: 16px;
   padding-top: 15px;
   padding-bottom: 15px;
-  margin-right: 12px;
   outline: none;
   color: #ffffff;
 }
