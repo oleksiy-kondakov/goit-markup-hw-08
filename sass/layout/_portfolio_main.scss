@@ -35,3 +35,28 @@
     margin-right: 8px;
   }
 }
+@media screen and (max-width: 767px) {
+  .portfolio-button {
+    &-list {
+      flex-wrap: wrap;
+      justify-content: start;
+      margin-bottom: 40px;
+    }
+  }
+  .portfolio-button-list-item {
+    &:nth-child(-n + 3) {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .portfolio-button {
+    &-list {
+      margin-bottom: 30px;
+    }
+  }
+  .portfolio-button-list-item {
+    margin-bottom: 0;
+  }
+}
