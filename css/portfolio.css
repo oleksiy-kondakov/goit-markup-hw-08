@@ -54,7 +54,6 @@ img {
 }
 
 .container {
-  display: flex;
   align-items: center;
   padding-left: 15px;
   padding-right: 15px;
@@ -95,6 +94,13 @@ img {
 .header {
   position: relative;
   border-bottom: 1px solid #ececec;
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .logo-white {
@@ -591,7 +597,7 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .container {
+  .footer .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -603,6 +609,7 @@ img {
   .adress-container {
     margin-bottom: 60px;
     margin-right: 165px;
+    text-align: center;
   }
   .adress-text {
     font-size: 14px;

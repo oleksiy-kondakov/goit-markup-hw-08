@@ -84,7 +84,7 @@
   }
 }
 @media screen and(min-width: 768px) {
-  .container {
+  .footer .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -96,6 +96,7 @@
   .adress-container {
     margin-bottom: 60px;
     margin-right: 165px;
+    text-align: center;
   }
   .adress-text {
     font-size: 14px;

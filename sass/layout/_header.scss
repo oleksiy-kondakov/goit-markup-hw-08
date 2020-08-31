@@ -2,7 +2,12 @@
   position: relative;
   border-bottom: 1px solid #ececec;
 }
-
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
 .logo-white {
   font-family: Raleway;
   font-style: normal;
